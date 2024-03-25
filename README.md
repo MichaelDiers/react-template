@@ -5,3 +5,4 @@ A [template repository](https://docs.github.com/en/repositories/creating-and-man
 - basic [Visual Studio Code](https://code.visualstudio.com/) [settings](https://code.visualstudio.com/docs/getstarted/settings)
 - [React](https://react.dev/) project initialized by using [Create React App](https://create-react-app.dev/docs/getting-started)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Sass](https://sass-lang.com/) using [Sass Boilerplate](https://github.com/KittyGiraudel/sass-boilerplate) by [KittyGiraudel](https://github.com/KittyGiraudel)
