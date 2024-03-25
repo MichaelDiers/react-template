@@ -10,7 +10,7 @@ permissions:
   id-token: write
   pages: write
 jobs:
-  react-app-to-github-pages:
+  react-ci:
     uses: MichaelDiers/github-workflows/.github/workflows/react-ci.yaml@main
     with:
       add-build-info: true
