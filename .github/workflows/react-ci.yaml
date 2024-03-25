@@ -15,6 +15,7 @@ jobs:
     with:
       add-build-info: true
       deploy-to-pages: true
+      run-tests: true
       set-homepage: true
       use-stylelint: true
       working-directory: app
