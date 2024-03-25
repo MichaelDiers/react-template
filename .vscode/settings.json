@@ -1,11 +1,9 @@
 {
-  "editor.tabSize": 2,
   /**
     Enforce the editor.tabSize for all files.
   **/
   "editor.detectIndentation": false,
   "editor.formatOnSave": true,
-  "[scss]": {
-    "files.insertFinalNewline": true
-  }
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true
 }
