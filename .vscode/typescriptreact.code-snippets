@@ -1,0 +1,46 @@
+{
+  "react-component": {
+    "prefix": "react-component",
+    "body": [
+      "/**",
+      " * ${1:Creates a new $TM_FILENAME_BASE component.}",
+      " * @returns {JSX.Element} A new react component.",
+      " * @type {() => JSX.Element}",
+      " */",
+      "const $TM_FILENAME_BASE: () => JSX.Element = (): JSX.Element => {",
+      "\treturn (",
+      "\t\t<$2>$0</$2>",
+      "\t);",
+      "}",
+      "",
+      "export default $TM_FILENAME_BASE;",
+      ""
+    ]
+  },
+  "react-component-test": {
+    "prefix": "react-component-test",
+    "body": [
+      "import { render, screen } from '@testing-library/react';",
+      "import ${1:${TM_FILENAME_BASE/(.+)\\.test$/$1/}} from './$1';",
+      "",
+      "test('renders $1', () => {",
+      "\trender(<$1 />);",
+      "",
+      "\tconst ${1/(.*)/${1:/camelcase}/}Element = screen.$0();",
+      "\texpect(${1/(.*)/${1:/camelcase}/}Element).toBeInTheDocument();",
+      "});",
+      ""
+    ]
+  },
+  "react-component-test-container": {
+    "prefix": "react-component-test-container",
+    "body": [
+      "test('renders ${1:${TM_FILENAME_BASE/(.+)\\.test$/$1/}}', () => {",
+      "\tconst { container } = render(<$1 />);",
+      "",
+      "\tconst ${1/(.*)/${1:/camelcase}/}Element = container.querySelector('$2');",
+      "\texpect(${1/(.*)/${1:/camelcase}/}Element).not.toBeNull();",
+      "});",
+    ]
+  }
+}
