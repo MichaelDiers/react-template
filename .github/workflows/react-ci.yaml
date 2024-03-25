@@ -1,0 +1,19 @@
+name: build and deploy react application
+on:
+  push:
+    paths:
+      - app/**
+      - .github/workflows/react-ci.yaml
+  workflow_dispatch:
+permissions:
+  contents: read
+  id-token: write
+  pages: write
+jobs:
+  react-app-to-github-pages:
+    uses: MichaelDiers/github-workflows/.github/workflows/react-ci.yaml@main
+    with:
+      add-build-info: true
+      deploy-to-pages: true
+      use-stylelint: true
+      working-directory: app
